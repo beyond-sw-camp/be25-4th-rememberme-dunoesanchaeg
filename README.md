@@ -153,11 +153,7 @@
 ![Swagger](https://img.shields.io/badge/-Swagger-%23Clojure?style=for-the-badge&logo=swagger&logoColor=white)
 
 ### DEVOPS
-<img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white"> 
-<img src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white">
-<img src="https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=jenkins&logoColor=white">
-<img src="https://img.shields.io/badge/Argo%20CD-FE6A16?style=for-the-badge&logo=argo&logoColor=white">
-<img src="https://img.shields.io/badge/nginx-%23009639.svg?style=for-the-badge&logo=nginx&logoColor=white">
+<img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white"> <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white"><img src="https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=jenkins&logoColor=white"><img src="https://img.shields.io/badge/Argo%20CD-FE6A16?style=for-the-badge&logo=argo&logoColor=white"><img src="https://img.shields.io/badge/nginx-%23009639.svg?style=for-the-badge&logo=nginx&logoColor=white">
 
 <br>
 
@@ -167,7 +163,7 @@
 <details>
 <summary><b>🧱 시스템 아키텍처</b></summary>
 
-<img src="profile\SystemArchitecture.png" /></br>
+<img src="./images/시스템아키텍처.png" /></br>
 
 </details>
 <br>
@@ -178,7 +174,8 @@
 <details>
 <summary><b>🗒️ 요구사항 정의서 (링크)</b></summary>
 
-- 🗒️[요구사항 정의서](https://docs.google.com/spreadsheets/d/1cGxKolGeDWGtzUYxWShYSNCS0KK_gclYAco5hxDQDqI/edit?gid=1415182395#gid=1415182395)
+- [요구사항 정의서](https://docs.google.com/spreadsheets/d/1cGxKolGeDWGtzUYxWShYSNCS0KK_gclYAco5hxDQDqI/edit?gid=1415182395#gid=1415182395)
+
 </details>
 <br>
 
@@ -187,15 +184,8 @@
 
 <details>
 <summary><b>🗄️ 테이블 정의서 (링크)</b></summary>
-<img src="./images/테이블명세서1.png" width="1000" alt="Table1 image" /></br>
-<img src="./images/테이블명세서2.png" width="1000" alt="Table2 image" /></br>
-<img src="./images/테이블명세서3.png" width="1000" alt="Table3 image" /></br>
-<img src="./images/테이블명세서4.png" width="1000" alt="Table4 image" /></br>
-<img src="./images/테이블명세서5.png" width="1000" alt="Table5 image" /></br>
-<img src="./images/테이블명세서6.png" width="1000" alt="Table6 image" /></br>
-<img src="./images/테이블명세서7-1.png" width="1000" alt="Table7 image" /></br>
-  
-- 🗄️[테이블 정의서](https://docs.google.com/spreadsheets/d/1W4umq2TJ3RlpNsyxd6Db3YlDfhOW4DBUH2VfQkSFBGc/edit?gid=0#gid=0)
+
+- [테이블 정의서](https://docs.google.com/spreadsheets/d/1W4umq2TJ3RlpNsyxd6Db3YlDfhOW4DBUH2VfQkSFBGc/edit?gid=0#gid=0)
 
 </details>
 <br>
@@ -205,8 +195,8 @@
 
 <details>
 <summary><b>📋 API 명세서 (링크)</b></summary>
-  
-- [📋 API 명세서](https://www.notion.so/API-308dd863c93280e2808fdca71cc4adde)
+
+- [API 명세서](https://www.notion.so/API-308dd863c93280e2808fdca71cc4adde)
 
 </details>
 <br>
@@ -215,9 +205,9 @@
 ## <a id="8-백엔드-테스트-보고서"></a> 8. 백엔드 테스트 보고서
 
 <details>
- <summary><b>🧾 백엔드 테스트 보고서 (링크)</b></summary>
+<summary><b>🧾 백엔드 테스트 보고서 (링크)</b></summary>
 
-- [🧾 백엔드 테스트 보고서](https://docs.google.com/spreadsheets/d/1cGxKolGeDWGtzUYxWShYSNCS0KK_gclYAco5hxDQDqI/edit?gid=211938515#gid=211938515)
+- [백엔드 테스트 보고서](https://docs.google.com/spreadsheets/d/1cGxKolGeDWGtzUYxWShYSNCS0KK_gclYAco5hxDQDqI/edit?gid=211938515#gid=211938515)
 
 </details>
 <br>
@@ -226,9 +216,9 @@
 ## <a id="9-프론트엔드-테스트-보고서"></a> 9. 프론트엔드 테스트 보고서
 
 <details>
- <summary><b>🧾 프론트엔드 테스트 보고서 (링크)</b></summary>
+<summary><b>🧾 프론트엔드 테스트 보고서 (링크)</b></summary>
 
-  - [🧾 프론트엔드 테스트 보고서](https://docs.google.com/spreadsheets/d/1cGxKolGeDWGtzUYxWShYSNCS0KK_gclYAco5hxDQDqI/edit?gid=687771753#gid=687771753)
+- [프론트엔드 테스트 보고서](https://docs.google.com/spreadsheets/d/1cGxKolGeDWGtzUYxWShYSNCS0KK_gclYAco5hxDQDqI/edit?gid=687771753#gid=687771753)
 
 </details>
 <br>
@@ -237,7 +227,7 @@
 ## <a id="10-빌드-및-배포-스크립트"></a> 10. 빌드 및 배포 스크립트
 
 <details>
- <summary><b>🧾 빌드 및 배포 스크립트</b></summary>
+<summary><b>🧾 빌드 및 배포 스크립트</b></summary>
 
 
 </details>
