@@ -1,6 +1,6 @@
 # 두뇌산책
 
-<img width="1000" alt="두뇌산책_썸네일" src="profile\썸네일마크제거.jpg" />
+<img width="1000" alt="두뇌산책_대표_이미지" src="./images/두뇌산책대표이미지.jpg" />
 
 
 ## 👥 팀원 소개
