@@ -159,14 +159,10 @@
 
 ## <a id="4-시스템-아키텍처"></a> 4. 시스템 아키텍처
 
-<details>
-<summary><b>🧱 시스템 아키텍처</b></summary>
-
 <br>
 
-<img src="./images/CICD시스템아키텍처.png" /></br>
+<img src="./images/CICD시스템아키텍처.png" />
 
-</details>
 <br>
 
 
