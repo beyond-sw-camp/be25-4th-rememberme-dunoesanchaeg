@@ -162,7 +162,7 @@
 <details>
 <summary><b>🧱 시스템 아키텍처</b></summary>
 
-<img src="./images/시스템아키텍처.png" /></br>
+<img src="./images/CICD시스템아키텍처.png" /></br>
 
 </details>
 <br>
