@@ -165,7 +165,7 @@
 ## <a id="5-요구사항-정의서"></a> 5. 요구사항 정의서
 
 <details>
-<summary><b>🗒️ 요구사항 정의서 (링크)</b></summary>
+<summary><b>🗒️ 요구사항 정의서 링크</b></summary>
 
 - [요구사항 정의서](https://docs.google.com/spreadsheets/d/1cGxKolGeDWGtzUYxWShYSNCS0KK_gclYAco5hxDQDqI/edit?gid=1415182395#gid=1415182395)
 
@@ -176,7 +176,7 @@
 ## <a id="6-테이블-정의서"></a> 6. 테이블 정의서
 
 <details>
-<summary><b>🗄️ 테이블 정의서 (링크)</b></summary>
+<summary><b>🗄️ 테이블 정의서 링크</b></summary>
 
 - [테이블 정의서](https://docs.google.com/spreadsheets/d/1W4umq2TJ3RlpNsyxd6Db3YlDfhOW4DBUH2VfQkSFBGc/edit?gid=0#gid=0)
 
@@ -187,7 +187,7 @@
 ## <a id="7-API-명세서"></a> 7. API 명세서
 
 <details>
-<summary><b>📋 API 명세서 (링크)</b></summary>
+<summary><b>📋 API 명세서 링크</b></summary>
 
 - [API 명세서](https://www.notion.so/API-308dd863c93280e2808fdca71cc4adde)
 
@@ -198,7 +198,7 @@
 ## <a id="8-백엔드-테스트-보고서"></a> 8. 백엔드 테스트 보고서
 
 <details>
-<summary><b>🧾 백엔드 테스트 보고서 (링크)</b></summary>
+<summary><b>🧾 백엔드 테스트 보고서 링크</b></summary>
 
 - [백엔드 테스트 보고서](https://docs.google.com/spreadsheets/d/1cGxKolGeDWGtzUYxWShYSNCS0KK_gclYAco5hxDQDqI/edit?gid=211938515#gid=211938515)
 
@@ -209,7 +209,7 @@
 ## <a id="9-프론트엔드-테스트-보고서"></a> 9. 프론트엔드 테스트 보고서
 
 <details>
-<summary><b>🧾 프론트엔드 테스트 보고서 (링크)</b></summary>
+<summary><b>🧾 프론트엔드 테스트 보고서 링크</b></summary>
 
 - [프론트엔드 테스트 보고서](https://docs.google.com/spreadsheets/d/1cGxKolGeDWGtzUYxWShYSNCS0KK_gclYAco5hxDQDqI/edit?gid=687771753#gid=687771753)
 
