@@ -238,7 +238,7 @@ Docker 빌드: 변경된 파트의 도커 이미지를 생성하고 Docker Hub�
 #### 4. CD 단계: 자동 동기화 및 배포 (ArgoCD)
 Git 감지: ArgoCD가 Git 저장소의 상태 변화를 자동으로 감지합니다.
 무중단 배포: 백엔드와 프론트엔드 각각의 변경 사항을 쿠버네티스 클러스터에 무중단으로 반영합니다.
-<br>
+<br><br><br>
 
 
 ### ⚙️ 파이프라인 스크립트
@@ -393,6 +393,86 @@ pipeline {
 </details>
 
 <br>
+
+
+<details>
+<summary><b>k8s manifest Pipline</b></summary>
+
+```groovy
+pipeline {
+    agent any
+
+    parameters {
+        string(name: 'IMAGE_TAG', defaultValue: '', description: 'Docker Image Version')
+        string(name: 'DID_BUILD_FRONTEND', defaultValue: '', description: 'Did Build Frontend')
+        string(name: 'DID_BUILD_BACKEND', defaultValue: '', description: 'Did Build Backend')
+    }
+
+    stages {
+        stage('Checkout Main Branches') {
+            steps {
+                sh 'git checkout main'
+                echo "IMAGE_TAG: ${params.IMAGE_TAG}"
+                echo "DID_BUILD_FRONTEND: ${params.DID_BUILD_FRONTEND}"
+                echo "DID_BUILD_BACKEND: ${params.DID_BUILD_BACKEND}"
+            }
+        }
+
+        stage('update frontend deployment.yaml') {
+            when {
+                expression {
+                    return params.DID_BUILD_FRONTEND == "true"
+                }
+            }
+            steps {
+                dir('rememberme-frontend') {
+                    echo "Received Docker Image Version : ${params.IMAGE_TAG}"
+                    sh "sed -i 's|yjs0530/rememberme-frontend:.*|yjs0530/rememberme-frontend:${params.IMAGE_TAG}|g' deployment.yaml"
+                    sh 'cat deployment.yaml'
+                }
+            }
+        }
+
+        stage('update backend deployment.yaml') {
+            when {
+                expression {
+                    return params.DID_BUILD_BACKEND == "true"
+                }
+            }
+            steps {
+                dir('rememberme-backend') {
+                    echo "Received Docker Image Version : ${params.IMAGE_TAG}"
+                    sh "sed -i 's|yjs0530/rememberme-backend:.*|yjs0530/rememberme-backend:${params.IMAGE_TAG}|g' deployment.yaml"
+                    sh 'cat deployment.yaml'
+                }
+            }
+        }
+
+        stage('Commit & Push') {
+            when {
+                expression { 
+                    return params.DID_BUILD_FRONTEND == "true" || params.DID_BUILD_BACKEND == "true"
+                }
+            }
+            steps {
+                sh 'git config --list'
+                sh 'git config user.name "jenkins"'
+                sh 'git config user.email "jenkins@beyond.com"'
+                sh "git add ."
+                sh "git commit -m 'Update RememberMe Image Version ${params.IMAGE_TAG}'"
+                sh 'git status'
+
+                sshagent(['github-k8s-manifests']) {
+                    sh 'git push origin main'
+                }
+            }
+        }
+    }
+}
+```
+
+</details>
+<br><br><br>
 
 
 ### ✅ 실행 결과
