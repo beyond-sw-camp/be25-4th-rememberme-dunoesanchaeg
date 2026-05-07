@@ -159,8 +159,6 @@
 
 ## <a id="4-시스템-아키텍처"></a> 4. 시스템 아키텍처
 
-<br>
-
 <img src="./images/CICD시스템아키텍처.png" />
 
 <br>
@@ -228,13 +226,16 @@
 #### 1. 코드 업데이트 (Git Push)
 개발자가 수정한 코드를 GitHub develop 브랜치에 commit & push 하여 전체 자동화 프로세스를 트리거합니다.
 
+
 #### 2. 이벤트 전달 (Webhook)
 GitHub는 Webhook을 통해 실시간으로 변경 이벤트를 Jenkins 서버에 전달합니다.
+
 
 #### 3. CI 단계: 빌드 및 이미지 업로드 (Jenkins)
 변경 감지: Jenkins 파이프라인이 이전 커밋과 비교하여 백엔드/프론트엔드 변경 사항을 식별합니다.
 Docker 빌드: 변경된 파트의 도커 이미지를 생성하고 Docker Hub에 업로드합니다.
 설정 업데이트: deployment.yml 파일의 이미지 태그를 최신화하여 Manifest 저장소에 push 합니다.
+
 
 #### 4. CD 단계: 자동 동기화 및 배포 (ArgoCD)
 Git 감지: ArgoCD가 Git 저장소의 상태 변화를 자동으로 감지합니다.
