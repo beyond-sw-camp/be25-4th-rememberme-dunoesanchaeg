@@ -60,9 +60,8 @@
 7. [API 명세서](#7-API-명세서)
 8. [백엔드 테스트 보고서](#8-백엔드-테스트-보고서)
 9. [프론트엔드 테스트 보고서](#9-프론트엔드-테스트-보고서)
-10. [빌드 및 배포 스크립트](#10-빌드-및-배포-스크립트)
-11. [CI/CD](#11-CI/CD)
-12. [회고](#12-회고)
+10. [CI/CD](#10-CI/CD)
+11. [회고](#11-회고)
 
 <br>
 
@@ -153,7 +152,7 @@
 ![Swagger](https://img.shields.io/badge/-Swagger-%23Clojure?style=for-the-badge&logo=swagger&logoColor=white)
 
 ### DEVOPS
-<img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white"> <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white"><img src="https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=jenkins&logoColor=white"><img src="https://img.shields.io/badge/Argo%20CD-FE6A16?style=for-the-badge&logo=argo&logoColor=white"><img src="https://img.shields.io/badge/nginx-%23009639.svg?style=for-the-badge&logo=nginx&logoColor=white">
+<img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white"> <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white"> <img src="https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=jenkins&logoColor=white"> <img src="https://img.shields.io/badge/Argo%20CD-FE6A16?style=for-the-badge&logo=argo&logoColor=white"> <img src="https://img.shields.io/badge/nginx-%23009639.svg?style=for-the-badge&logo=nginx&logoColor=white">
 
 <br>
 
@@ -224,20 +223,7 @@
 <br>
 
 
-## <a id="10-빌드-및-배포-스크립트"></a> 10. 빌드 및 배포 스크립트
-
-<details>
-<summary><b>🧾 빌드 및 배포 스크립트</b></summary>
-
-
-</details>
-<br>
-
-
-## <a id="11-CI/CD"></a> 11. CI/CD
-
-### 아키텍처
-
+## <a id="10-CI/CD"></a> 10. CI/CD
 
 ### 시나리오
 
@@ -251,7 +237,7 @@
 <br>
 
 
-## <a id="12-회고"></a> 12. 회고
+## <a id="11-회고"></a> 11. 회고
 
 |   이름   |     회고 내용     |
 |-----------|-----------------|
