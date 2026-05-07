@@ -219,6 +219,8 @@
 
 ## <a id="10-CI/CD"></a> 10. CI/CD
 
+<br>
+
 ### 📌 시나리오
 
 #### 1. 코드 업데이트 (Git Push)
@@ -391,9 +393,6 @@ pipeline {
 ```
 
 </details>
-
-<br>
-
 
 <details>
 <summary><b>k8s manifest Pipline</b></summary>
