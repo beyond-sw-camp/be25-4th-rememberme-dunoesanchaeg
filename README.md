@@ -477,6 +477,8 @@ pipeline {
 
 <details>
 <summary><b>실행 결과 링크</b></summary>
+  
+<br>
 <img src="./images/실행결과썸네일.png" width="1000" alt="실행_결과_썸네일" /></br>
 
 - [실행 결과 링크](https://youtu.be/AMrLpmCyrm4)
