@@ -1,0 +1,70 @@
+pipeline {
+    agent any
+
+    parameters {
+        string(name: 'IMAGE_TAG', defaultValue: '', description: 'Docker Image Version')
+        string(name: 'DID_BUILD_FRONTEND', defaultValue: '', description: 'Did Build Frontend')
+        string(name: 'DID_BUILD_BACKEND', defaultValue: '', description: 'Did Build Backend')
+    }
+
+    stages {
+        stage('Checkout Main Branches') {
+            steps {
+                sh 'git checkout main'
+                echo "IMAGE_TAG: ${params.IMAGE_TAG}"
+                echo "DID_BUILD_FRONTEND: ${params.DID_BUILD_FRONTEND}"
+                echo "DID_BUILD_BACKEND: ${params.DID_BUILD_BACKEND}"
+            }
+        }
+
+        stage('update frontend deployment.yaml') {
+            when {
+                expression {
+                    return params.DID_BUILD_FRONTEND == "true"
+                }
+            }
+            steps {
+                dir('rememberme-frontend') {
+                    echo "Received Docker Image Version : ${params.IMAGE_TAG}"
+                    sh "sed -i 's|yjs0530/rememberme-frontend:.*|yjs0530/rememberme-frontend:${params.IMAGE_TAG}|g' deployment.yaml"
+                    sh 'cat deployment.yaml'
+                }
+            }
+        }
+
+        stage('update backend deployment.yaml') {
+            when {
+                expression {
+                    return params.DID_BUILD_BACKEND == "true"
+                }
+            }
+            steps {
+                dir('rememberme-backend') {
+                    echo "Received Docker Image Version : ${params.IMAGE_TAG}"
+                    sh "sed -i 's|yjs0530/rememberme-backend:.*|yjs0530/rememberme-backend:${params.IMAGE_TAG}|g' deployment.yaml"
+                    sh 'cat deployment.yaml'
+                }
+            }
+        }
+
+        stage('Commit & Push') {
+            when {
+                expression { 
+                    return params.DID_BUILD_FRONTEND == "true" || params.DID_BUILD_BACKEND == "true"
+                }
+            }
+            steps {
+                sh 'git config --list'
+                sh 'git config user.name "jenkins"'
+                sh 'git config user.email "jenkins@beyond.com"'
+                sh "git add ."
+                sh "git commit -m 'Update RememberMe Image Version ${params.IMAGE_TAG}'"
+                sh 'git status'
+
+                sshagent(['github-k8s-manifests']) {
+                    sh 'git push origin main'
+                }
+            }
+        }
+    }
+}
