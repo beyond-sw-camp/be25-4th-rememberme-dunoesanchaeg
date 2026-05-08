@@ -156,6 +156,9 @@
 
 
 ## <a id="4-시스템-아키텍처"></a> 4. 시스템 아키텍처
+<img src="./images/통합시스템아키텍처.png" />
+
+<br>
 
 <img src="./images/CICD시스템아키텍처.png" />
 
