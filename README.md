@@ -160,7 +160,7 @@
 
 <br>
 
-<img src="./images/CICD시스템아키텍처.png" />
+<img src="./images/시스템아키텍처 수정본.png" />
 
 <br>
 
