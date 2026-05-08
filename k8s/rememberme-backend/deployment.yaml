@@ -1,0 +1,44 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: rememberme-backend-deploy
+  namespace: rememberme
+  labels:
+    app: rememberme-backend
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: rememberme-backend
+  template:
+    metadata:
+      labels:
+        app: rememberme-backend
+    spec:
+      containers:
+      - name: rememberme-backend
+        image: yjs0530/rememberme-backend:latest
+        ports:
+        - containerPort: 8080
+        envFrom:
+        - configMapRef:
+            name: rememberme-backend-config
+        - secretRef:
+            name: rememberme-backend-secret
+        resources:
+          requests:
+            memory: "256Mi"
+            cpu: "250m"
+          limits:
+            memory: "512Mi"
+            cpu: "500m"
+        readinessProbe:
+          tcpSocket:
+            port: 8080
+          initialDelaySeconds: 30
+          periodSeconds: 10
+        livenessProbe:
+          tcpSocket:
+            port: 8080
+          initialDelaySeconds: 60
+          periodSeconds: 30

@@ -1,0 +1,41 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: rememberme-frontend-deploy
+  namespace: rememberme
+  labels:
+    app: rememberme-frontend
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: rememberme-frontend
+  template:
+    metadata:
+      labels:
+        app: rememberme-frontend
+    spec:
+      containers:
+      - name: rememberme-frontend
+        image: yjs0530/rememberme-frontend:latest
+        ports:
+        - containerPort: 80
+        resources:
+          requests:
+            memory: "64Mi"
+            cpu: "100m"
+          limits:
+            memory: "128Mi"
+            cpu: "200m"
+        readinessProbe:
+          httpGet:
+            path: /
+            port: 80
+          initialDelaySeconds: 5
+          periodSeconds: 10
+        livenessProbe:
+          httpGet:
+            path: /
+            port: 80
+          initialDelaySeconds: 10
+          periodSeconds: 30

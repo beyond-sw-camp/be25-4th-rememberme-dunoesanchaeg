@@ -1,0 +1,71 @@
+# ==========================================================================
+# Java & Compiled files
+# ==========================================================================
+*.class
+*.log
+*.ctxt
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+hs_err_pid*
+replay_pid*
+
+# ==========================================================================
+# Maven (Build artifacts)
+# ==========================================================================
+/target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.nextDevelopment
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# ==========================================================================
+# IDE Settings (IntelliJ, Eclipse, VS Code)
+# ==========================================================================
+# IntelliJ
+.idea/
+*.iml
+*.iws
+out/
+
+# Eclipse
+.settings/
+.project
+.classpath
+.factorypath
+
+# VS Code
+.vscode/
+
+# ==========================================================================
+# OS Specific
+# ==========================================================================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ==========================================================================
+# Secrets & Configuration (보안 필수 🛡️)
+# ==========================================================================
+# DB 정보나 API 키가 포함된 설정 파일은 제외합니다.
+src/main/resources/application-local.yml
+src/main/resources/application-secret.yml
+src/main/resources/application-local.properties
+src/main/resources/application-secret.properties
+
+# ==========================================================================
+# MyBatis Specific
+# ==========================================================================
+# 만약 MyBatis Generator를 사용하여 자동 생성된 코드가 있다면 
+# 필요에 따라 제외할 수 있지만, 보통은 형상관리에 포함시킵니다.
+# 툴에 의해 생성된 로그나 임시 파일만 무시합니다.
+mybatis-generator.log

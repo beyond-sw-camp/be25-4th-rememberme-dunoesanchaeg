@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: rememberme-backend-config
+  namespace: rememberme
+data:
+  DB_HOST: "host.docker.internal"
+  DB_PORT: "3306"
+  DB_NAME: "rememberv1"
+  CORS_ALLOWED_ORIGIN: "http://localhost:30180"
+  COOKIE_DOMAIN: "localhost"
