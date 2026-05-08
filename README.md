@@ -481,7 +481,7 @@ pipeline {
 <br>
 <img src="./images/실행결과썸네일.png" width="1000" alt="실행_결과_썸네일" /></br>
 
-- [실행 결과 링크](https://youtu.be/AMrLpmCyrm4)
+- [실행 결과 영상](https://youtu.be/AMrLpmCyrm4)
 
 </details>
 <br>
