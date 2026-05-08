@@ -476,7 +476,8 @@ pipeline {
 ### ✅ 실행 결과
 
 <details>
-<summary><b>📱 실행 결과 링크</b></summary>
+<img src="./images/실행결과썸네일.png" width="1000" alt="Table1 image" /></br>
+<summary><b>실행 결과 링크</b></summary>
 
 - [실행 결과 링크](https://youtu.be/AMrLpmCyrm4)
 
